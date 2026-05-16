@@ -2,7 +2,8 @@ from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton 
 from aiogram.filters import Command
 from random import choice
-import asyncio 
+import asyncio
+import os
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
