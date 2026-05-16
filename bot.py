@@ -4,7 +4,9 @@ from aiogram.filters import Command
 from random import choice
 import asyncio 
 
-bot = Bot(token='8760016418:AAHzxqQqR5bYkt_8joLhrrKe8WhA-jN-f2g')
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
+bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
 kb = ReplyKeyboardMarkup(
